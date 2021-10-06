@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RentAway</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="template.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+  <style>
+.example{
+flex-direction: column;
+align-items: center;
+}
+ hr{
+ border-color:black;
+ height:8%;
+ }
+  .panel-primary >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border-color:black;
+  }
+  .panel-success >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border-color:black;
+  }
+  .panel-danger >.panel-heading{
+  background-color:#23bca5;
+  text-align:center;
+  color:white;
+  border:black;
+  }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.carousel-inner img {
+      width: 100%;
+      height: 100%;
+	  }
+#myCarousel1{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+#Carousel{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+#Carousel1{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+#Carousel2{
+height:300px;
+width:100%;
+overflow:hidden;
+}
+.responsive {
+    width:100%;
+    height: auto;
+}
+a.navbar-nav:hover{
+background-color:#e66e5e;
+}
+sd{
+background-image:url('vp.jpg');
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+div.gallery {
+  
+}
+
+div.gallery:hover {
+ -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  
+}
+
+div.gallery img {
+  width: 50%;
+  height: 80%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top"style="height:0%; background-color:#ebeced ; border:0px">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<img src="house.png" class="responsive" style="width:10%;height:60px; margin-top: 1px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <a class="navbar-brand" class="active" style="color:#e66e5e;font-family:literata;font-size: 35px" align="left-side" href="template.html"><b>RentAway</b></a>
+
+    </div>
+	 
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <a href=="aboutus.html">
+        <li><img src="payrent.png"><span>Pay Rent</span></a></li>
+       <li><a href="stores.html"><span style="hover-color:#e66e5e">Property Owners</span></a></li>
+<li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            <li><a href="prac.html"><span "class="glyphicon glyphicon-user"></span>Sign Up</a></li>		
+		  <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span ><span class="glyphicon glyphicon-menu-hamburger"></span>Menu</span></a>
+
+		 <ul class="dropdown-menu">
+            <li><a href="#">Post Your Property</a></li>
+			<li><a href="#">Rental Agreement</a></li>
+			<li><a href="#">Refer & Earn</a></li>
+			<li><a href="#">Rent Receipts </a></li>
+			<li><a href="#">Tenant Plans</a></li>
+			<li><a href="#">Owner Plans</a></li>
+			<li><a href="#">Buyer Plans</a></li>
+			<li><a href="#">Seller Plans</a></li>
+			<li class="dropdown-submenu">
+			<a  class="test" href="#" ><span>Commercial Plans<span class="caret"></span></span></a>
+				<ul class="dropdown-menu"style="background-color:#e66e5e">
+					<li><a href="#">Tenant Plans</a></li>
+					<li><a href="#">Owner Plans</a></li>
+					<li><a href="#">Buyer Plans</a></li>
+					<li><a href="#">Seller Plans</a></li>
+				</ul>
+				</li>
+			<li><a href="#">Careers</a></li>
+			<li><a href="#">Corporate Enquiry</a></li>
+			<li><a href="#">Blog</a></li>
+			<li class="dropdown-submenu"><a class="test" href="#"><span>Contact Us<span class="caret"></span></span></a>
+			<ul class="dropdown-menu"style="background-color:#e66e5e">
+			<h4>Email<h4>
+			hello@rentaway.in
+			<h4>Call<h4>
+			+91 9078456700
+			<h4>Whatsapp<h4>
+			+91 9078456700
+			</ul>
+			</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</br></br>
+<div style="margin-top:10px;background-color:#a9c0d6">
+
+       <center> <a><span  style="color:#e66e5e;font-size:30px"> World's Largest Rentaway Site</span></a></center>
+        
+		</div>
+
+
+  <div class="s01">
+
+      <form style="margin-bottom:110px;"><center>
+          <div >
+<div class="nb-productType-switch">
+<button data-url="/mumbai/buy" class="resale shadow-left btn" data-name="sale">Buy</button><!--
+--><button data-url="/mumbai/rent" class="rent shadow-right btn" data-name="rent" id="rentSelector">Rent</button>
+<button data-url="/mumbai/commercial_rent" class="commercial shadow-left btn active" data-name="commercial_rent">Commercial</button>
+</div>
+</div>
+
+        <div class="inner-form" style="width:50%;height:7%">
+			<div class="input-field second-wrap">
+			 <select style="height: 100%; width:100%;" id="location" name="Location">
+    <option value="Mumbai">Mumbai</option>
+    <option value="Banglore">Banglore</option>
+    <option value="Kerela">Kerela</option>
+    <option value="Goa">Goa</option>
+  </select>
+          </div>         
+		 <div class="input-field first-wrap">
+            <input id="search" type="text" placeholder="Search 3 localities/landmarks">
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="button">Search</button>
+          </div>
+        </div></center>
+      </form>
+    </div>
+	</br>
+	</br>
+	</div>
+	<center><h1><b><span style="color:#e66e5e;font-family:literata">We Gaurantee</b></h1></center>
+	<hr width="50%" height="8%"align="center" style="margin-left:25%"></br></br>
+<div class="responsive">
+<center>
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="hl.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Home Loan</div>
+  </div></center>
+</div><div class="responsive">
+<center>
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="pls.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Property Legal Services</div>
+  </div></center>
+</div><div class="responsive">
+<center>
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="sa.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Sale Agreement</div>
+  </div></center>
+</div>
+<div class="responsive">
+<center>
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="nbp.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">New Builder Projects</div>
+  </div></center>
+</div>
+</br></br></br>
+<div style="background-color:#ebeced;height:900px; padding-top:13%">
+<center></br></br></br>
+<h1><b><span style="color:#e66e5e; margin-bottom:100%;font-family:literata ">Our Customer Review</span></b></h1>
+<b><hr width="50%" height="8%"align="center" style="margin-left:25%;"></b>
+
+	
+	<section class="example">
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+	</section></center>
+</div>
+
+<div class="responsive">
+<center>
+<div style="background-color:#ebeced">
+	
+	</div>
+	</center>
+</body>
+</html>
+
